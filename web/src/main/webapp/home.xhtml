@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:body>
+    <h:form id="libraryForm">
+        <h:panelGrid columns="2">
+            <h:outputText value="Enter book name"/>
+            <h:inputText id="name" value="#{libraryManagement.message}"/>
+        </h:panelGrid>
+        <h:commandButton value="Save" action="#{libraryManagement.saveBook}"/>
+    </h:form>
+    <h:dataTable value="#{libraryManagement.bookList}" var="o">
+        <h:column>
+            <f:facet name="header">Book id</f:facet>
+            #{o.id}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Book Name</f:facet>
+            #{o.name}
+        </h:column>
+    </h:dataTable>
+</h:body>
+</html>
