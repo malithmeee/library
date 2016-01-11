@@ -39,10 +39,11 @@ public class LibraryManagement {
         hashtable.put(Context.URL_PKG_PREFIXES, "org.jboss.naming:org.jnp.interfaces");
         try {
             ctx = new InitialContext(hashtable);
-            libraryServices = (LibraryServicesRemote) ctx.lookup("LibraryServices/remote");
+            libraryServices = (LibraryServicesRemote) ctx.lookup("library/LibraryServices/remote");
         } catch (NamingException ex) {
             ex.printStackTrace();
         }
+        System.out.println(libraryServices + "libraryServices ----------------------");
         bookList = libraryServices.getAllBookList();
     }
 

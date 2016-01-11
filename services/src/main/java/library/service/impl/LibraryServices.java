@@ -37,6 +37,7 @@ public class LibraryServices implements LibraryServicesRemote {
 
     @Override
     public List<Book> getAllBookList() {
+        System.out.println(libraryPersistentBean + "libraryPersistentBean-------------------------------");
         return libraryPersistentBean.getBooks();
     }
 
