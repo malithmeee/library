@@ -24,7 +24,7 @@ public class LibraryPersistentBean implements LibraryPersistentBeanRemote {
     public LibraryPersistentBean() {
     }
 
-    @PersistenceContext(name = "EjbComponentPU")
+    @PersistenceContext(unitName = "EjbComponentPU")
     private EntityManager  entityManager;
 
     @Override

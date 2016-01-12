@@ -43,7 +43,6 @@ public class LibraryManagement {
         } catch (NamingException ex) {
             ex.printStackTrace();
         }
-        System.out.println(libraryServices + "libraryServices ----------------------");
         bookList = libraryServices.getAllBookList();
     }
 
