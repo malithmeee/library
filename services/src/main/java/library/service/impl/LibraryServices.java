@@ -17,6 +17,8 @@ import library.models.*;
 import library.service.*;
 
 import javax.ejb.*;
+import javax.ws.rs.*;
+import javax.ws.rs.core.*;
 import java.util.*;
 
 @Stateless
@@ -28,6 +30,12 @@ public class LibraryServices implements LibraryServicesRemote {
     @Override
     public void saveBook(Book book) {
         libraryPersistentBean.addBook(book);
+    }
+
+    public Response saveBook(@PathParam("name") String name) {
+        System.out.println(name + " ----------------------------------");
+        libraryPersistentBean.addBook(new Book(name));
+        return Response.ok().build();
     }
 
     @Override

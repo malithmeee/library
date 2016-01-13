@@ -15,12 +15,19 @@ package library.service;
 import library.models.*;
 
 import javax.ejb.*;
+import javax.ws.rs.*;
+import javax.ws.rs.core.*;
 import java.util.*;
 
 @Remote
+@Path("/library")
 public interface LibraryServicesRemote {
 
     void saveBook(Book book);
+
+    @GET
+    @Path("/book/{name}")
+    Response saveBook(@PathParam("name") String name);
 
     void updateBook(Book book);
 

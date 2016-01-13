@@ -20,8 +20,6 @@ import javax.faces.bean.*;
 import javax.naming.*;
 import java.util.*;
 
-//import javax.faces.bean.*;
-
 @ManagedBean
 @SessionScoped
 public class LibraryManagement {

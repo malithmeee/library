@@ -15,6 +15,7 @@
         <module>model</module>
         <module>web</module>
         <module>ear</module>
+        <module>api</module>
     </modules>
 
 </project>
