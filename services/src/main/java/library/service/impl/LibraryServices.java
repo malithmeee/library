@@ -28,13 +28,20 @@ public class LibraryServices implements LibraryServicesRemote {
     private LibraryPersistentBeanRemote libraryPersistentBean;
 
     @Override
-    public void saveBook(Book book) {
-        libraryPersistentBean.addBook(book);
+    public void saveBook(Book name) {
+        libraryPersistentBean.addBook(name);
     }
 
+    @Override
     public Response saveBook(@PathParam("name") String name) {
         System.out.println(name + " ----------------------------------");
         libraryPersistentBean.addBook(new Book(name));
+        return Response.ok().build();
+    }
+
+    @Override
+    public Response saveBookRequest(Book book) {
+        libraryPersistentBean.addBook(book);
         return Response.ok().build();
     }
 

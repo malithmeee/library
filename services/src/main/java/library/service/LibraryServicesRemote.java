@@ -29,6 +29,12 @@ public interface LibraryServicesRemote {
     @Path("/book/{name}")
     Response saveBook(@PathParam("name") String name);
 
+    @POST
+    @Path("/book")
+//    @Produces({"application/xml","application/json"})
+    @Consumes({"application/xml","application/json"})
+    Response saveBookRequest(Book name);
+
     void updateBook(Book book);
 
     List<Book> getAllBookList();
