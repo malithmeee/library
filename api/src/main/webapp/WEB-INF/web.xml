@@ -37,4 +37,14 @@
         <servlet-name>resteasy-servlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>message-setvlet</servlet-name>
+        <servlet-class>library.api.MessageServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>message-setvlet</servlet-name>
+        <url-pattern>/message</url-pattern>
+    </servlet-mapping>
 </web-app>

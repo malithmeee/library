@@ -1,4 +1,4 @@
-package library.ejb;/*
+package library.ejb.persistent;/*
  *   (C) Copyright 1996-2015 hSenid Software International (Pvt) Limited.
  *   All Rights Reserved.
  *

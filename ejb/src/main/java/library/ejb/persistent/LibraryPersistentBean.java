@@ -10,7 +10,7 @@
  *   property rights in these materials.
  *
  */
-package library.ejb;
+package library.ejb.persistent;
 
 import library.models.*;
 

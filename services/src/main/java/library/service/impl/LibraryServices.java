@@ -12,7 +12,7 @@
  */
 package library.service.impl;
 
-import library.ejb.*;
+import library.ejb.persistent.*;
 import library.models.*;
 import library.service.*;
 

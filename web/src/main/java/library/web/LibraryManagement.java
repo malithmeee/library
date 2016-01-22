@@ -16,6 +16,7 @@ import library.models.*;
 import library.service.*;
 
 import javax.annotation.*;
+import javax.faces.bean.ManagedBean;
 import javax.faces.bean.*;
 import javax.naming.*;
 import java.util.*;

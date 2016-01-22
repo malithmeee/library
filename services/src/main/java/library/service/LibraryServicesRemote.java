@@ -31,7 +31,7 @@ public interface LibraryServicesRemote {
 
     @POST
     @Path("/book")
-//    @Produces({"application/xml","application/json"})
+    @Produces({"application/xml","application/json"})
     @Consumes({"application/xml","application/json"})
     Response saveBookRequest(Book name);
 
