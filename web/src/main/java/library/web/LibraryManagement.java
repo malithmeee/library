@@ -15,6 +15,7 @@ package library.web;
 import library.models.*;
 import library.service.*;
 
+import javax.annotation.*;
 import javax.ejb.*;
 import javax.faces.bean.*;
 import javax.naming.*;
@@ -30,7 +31,7 @@ public class LibraryManagement {
     private List<Book> bookList;
     private InitialContext ctx;
 
-/*    @PostConstruct
+    @PostConstruct
     public void init() {
         Hashtable hashtable = new Hashtable();
         hashtable.put(Context.INITIAL_CONTEXT_FACTORY, "org.jnp.interfaces.NamingContextFactory");
@@ -43,7 +44,7 @@ public class LibraryManagement {
             ex.printStackTrace();
         }
         bookList = libraryServices.getAllBookList();
-    }*/
+    }
 
     public LibraryManagement() {
     }

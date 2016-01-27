@@ -23,7 +23,7 @@ public class MessageServlet extends HttpServlet {
     @Resource(mappedName = "queue/BookQueue")
     private Queue queue;
 
-    @Resource(mappedName = "java:/QueueConnectionFactory")
+    @Resource(mappedName = "java:/ConnectionFactory")
     private QueueConnectionFactory queueConnectionFactory;
 
     @Override
