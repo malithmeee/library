@@ -40,7 +40,6 @@ public class LibraryPersistentBean implements LibraryPersistentBeanRemote {
 
     @Override
     public List<Book> getBooks() {
-        System.out.println(entityManager + " entityManager ----------------------");
         List<Book> bookList = entityManager.createQuery("from Book").getResultList();
         if (bookList == null) {
             return new ArrayList<Book>();
