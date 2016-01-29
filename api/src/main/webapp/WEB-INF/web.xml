@@ -47,4 +47,14 @@
         <servlet-name>message-setvlet</servlet-name>
         <url-pattern>/message</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>count-setvlet</servlet-name>
+        <servlet-class>library.api.CountServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>count-setvlet</servlet-name>
+        <url-pattern>/count</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -4,6 +4,7 @@
         <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>-->
         <jta-data-source>java:/PostgresDS</jta-data-source>
         <class>library.models.Book</class>
+        <class>library.models.Count</class>
         <properties>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
