@@ -39,6 +39,10 @@ public class RequestCountPersistenceBean implements RequestCountPersistenceBeanR
 
     @Override
     public int getRequestCount() {
+        List<Count> counts = entityManager.createQuery("from Count").getResultList();
+        if (counts != null && !counts.isEmpty()) {
+            return counts.get(0).getCount();
+        }
         return 0;
     }
 }

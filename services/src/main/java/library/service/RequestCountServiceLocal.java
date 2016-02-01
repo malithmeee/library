@@ -1,4 +1,5 @@
-package library.service;/*
+package library.service;
+/*
  *   (C) Copyright 1996-2016 hSenid Software International (Pvt) Limited.
  *   All Rights Reserved.
  *
@@ -15,7 +16,7 @@ import javax.ejb.*;
 import javax.ws.rs.*;
 
 @Local
-public interface RequestCountService {
+public interface RequestCountServiceLocal {
 
     int getRequestCount();
 

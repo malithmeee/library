@@ -18,7 +18,7 @@ import library.service.*;
 import javax.ejb.*;
 
 @Stateless
-public class RequestCountServiceImpl implements RequestCountService {
+public class RequestCountService implements RequestCountServiceLocal {
 
     @EJB
     private RequestCountPersistenceBeanRemote requestCountPersistenceBeanRemote;

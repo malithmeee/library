@@ -16,6 +16,8 @@
         <module>web</module>
         <module>ear</module>
         <module>api</module>
+        <module>counter-web</module>
+        <module>counter</module>
     </modules>
 
 </project>
